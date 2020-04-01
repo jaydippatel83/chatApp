@@ -1,0 +1,88 @@
+#search-container {
+    display: flex;
+    align-items: center;
+    grid-area: search-container;
+    background:#0048AA;
+    padding: 0 20px; 
+    box-shadow: 0 1px 3px -1px #000000bf;
+    z-index: 1;
+    
+     
+  }
+    
+  #search-container  input {
+    width: 0;
+    flex: 1 0;
+    color:white;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px; 
+    border: 0; 
+    font-size: 1.4rem;
+    background: url('../../assets/images/search.svg') no-repeat #ffffff4d;
+    background-position: 20px center;
+    background-size: 20px 20px;
+    margin: 20px;
+    padding: 0px 50px;
+  }
+  
+  #search-container input::placeholder {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+
+  
+  }
+
+  div#chat-title {
+    padding: 20px;
+    background: #eee;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0048AA;
+}
+
+
+
+
+.user-img{
+  width: 50px;
+  height: 50px; 
+  border: 1px solid gray;
+  border-radius: 100%; 
+}
+.chat-msg{
+ font-size: 12px;
+ white-space: nowrap;
+ overflow-x: hidden;
+ text-overflow: ellipsis;
+ font-weight: normal;
+ width: 150px;
+
+}
+.date{
+ font-weight: normal;
+ font-size: 12px;
+}
+.user{
+ margin-top: 14px;
+ cursor: pointer;
+}
+.border-bottom{
+ border-bottom: 1px solid #eee;
+}
+.border-bottom:hover{
+ background-color: black;
+}
+.additem-icon{
+ width: 3rem !important;
+ height: 3rem !important;
+ color: #0048AA;
+ background: #fff;
+ border-radius: 100%;
+ cursor: pointer;
+}
+.bottom-adduser{
+ padding: 21px;
+ background: #0048AA;
+}
