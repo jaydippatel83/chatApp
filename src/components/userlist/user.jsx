@@ -2,6 +2,7 @@ import React, { Fragment, Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import './user.style.css'; 
+ 
 
 const USERS_QUERY = gql`
     query data { 

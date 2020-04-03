@@ -29,7 +29,7 @@ function App() {
       <Switch>
         <Route path="/chat" component={ChatBox} />
         <Route path="/adduser" component={AddUser} />
-        <Route path="/user" component={User} />
+       
       </Switch>
 
       <div id="chat-container">
@@ -43,15 +43,12 @@ function App() {
         </div>
         <div className="container-fluid">
           <div className="row height-100">
-            <div className="col-3 p-0">
-              <Search />
-              <User />
-              {/* <AddUser/> */}
+            <div className="col-3 p-0 bg-gray">
+              <Search />  
             </div>
             <div className="col-9 p-0">
               <UserTitle />
-              <ChatBox />
-              {/* <MsgBox/> */}
+              <ChatBox />  
             </div>
           </div>
         </div>
