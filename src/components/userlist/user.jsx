@@ -2,7 +2,6 @@ import React, { Fragment, Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import './user.style.css'; 
-import ChatBox from '../chatbox/chatbox';
 
 const USERS_QUERY = gql`
     query data { 
@@ -10,7 +9,10 @@ const USERS_QUERY = gql`
               id,
               user,
               imageUrl,
-              messageText,
+              messageText{
+                  message
+                  date
+              }
               createdAt
             } 
     }
@@ -28,20 +30,20 @@ class User extends Component {
                     {
                         ({ loading, error, data }) => {
                             if (loading) return <h4>Loading...</h4>;
-                            if (error) console.log(error);
+                            if (error) console.log(error); 
                             return <Fragment>
                                 <div className="container-fluid bg-dark"> 
                                     <div className="row">
                                         {
                                             data.chatMsgs.map((chat, index) => (
-                                                <div onClick={() => UserName(chat.user)} key={index} className="col-12 border-bottom">
+                                                <div onClick={() => UserName(chat.id)} key={index} className="col-12 border-bottom">
                                                     <div className="d-flex justify-content-start ">
                                                         <img className="m-2 user-img" src={chat.imageUrl} />
                                                         <div className="user text-light font-weight-bold"  >
                                                             <p className="m-0">{chat.user}</p>
                                                             <div className="d-flex justify-content-around">
-                                                                <span className="chat-msg">{chat.messageText}</span>
-                                                                <span className="date">{chat.createdAt}</span>
+                                                                <span className="chat-msg">{chat.messageText[chat.messageText.length-1].message}</span>
+                                                                <span className="date">{chat.messageText[chat.messageText.length-1].date}</span>
                                                             </div>
                                                         </div>
 

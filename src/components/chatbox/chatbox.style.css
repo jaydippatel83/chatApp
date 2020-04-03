@@ -11,8 +11,9 @@
     background: #0048AA;
     color: white;
     border-radius: 14px 14px 14px 0px;
-    width: 50%;
-    font-weight: bold;
+    width: 50%; 
+    font-size: 14px;
+    font-weight: normal;
 }
 .height-100{
     max-height: 450px;

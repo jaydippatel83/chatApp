@@ -35,16 +35,19 @@
   }
 
   div#chat-title {
-    padding: 20px;
+    padding: 8px 30px;
     background: #eee;
     font-size: 22px;
     font-weight: bold;
     color: #0048AA;
 }
-
-
-
-
+ .title-img{
+   margin-top: 5px;
+  width: 40px;
+  height: 40px; 
+  border: 1px solid #0048AA;
+  border-radius: 100%; 
+ }
 .user-img{
   width: 50px;
   height: 50px; 
