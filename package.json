@@ -15,7 +15,7 @@
     "apollo-server": "^2.11.0",
     "apollo-server-express": "^2.11.0",
     "bootstrap": "^4.4.1",
-    "express": "^4.17.1",
+    "express": "^4.22.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.6.0",
     "react": "^16.13.1",
@@ -23,7 +23,7 @@
     "react-chat-elements": "^10.8.0",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "subscriptions-transport-ws": "^0.9.16"
   },
   "scripts": {
